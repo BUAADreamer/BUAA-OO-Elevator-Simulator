@@ -8,8 +8,9 @@ public class ElevatorInput : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject passengerPrefab;
-    private List<string> reqStrList= new List<string>();
+    public List<string> reqStrList= new List<string>();
     private int reqIndex=0;
+    public List<PassengerController> Passengers = new List<PassengerController>();
     void Start()
     {
         StreamReader sr = new StreamReader("Assets/Scripts/data.txt");
@@ -36,10 +37,11 @@ public class ElevatorInput : MonoBehaviour
     void addPerson()
     {
         string reqStr = reqStrList[reqIndex];
-        Debug.Log(reqStr);
+        //Debug.Log(reqStr);
         reqIndex++;
         GameObject person = Instantiate(passengerPrefab);
         PassengerController passenger = person.GetComponent<PassengerController>();
         passenger.setInitData(reqStr);
+        Passengers.Add(passenger);
     }
 }
