@@ -3,6 +3,8 @@ The Simulator of the Elevator project in BUAA OO Course.
 
 In windows environment, you can run the exe file to watch the demo, modify input data in `data.txt`
 
+<iframe height=498 width=510 src="./demo.mp4">
+
 ```shell
 [0.0]1-FROM-A-7-TO-A-9
 [1.1]2-FROM-A-6-TO-A-5
