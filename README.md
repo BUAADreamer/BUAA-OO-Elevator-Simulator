@@ -15,5 +15,5 @@ In windows environment, you can run the exe file to watch the demo, modify input
 
 The video below shows a simple case.
 
-![](.\pics\demo.gif)
+![](pics/demo.gif)
 
