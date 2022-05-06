@@ -13,7 +13,7 @@ public class ElevatorInput : MonoBehaviour
     public List<PassengerController> Passengers = new List<PassengerController>();
     void Start()
     {
-        StreamReader sr = new StreamReader("Assets/Scripts/data.txt");
+        StreamReader sr = new StreamReader("./data.txt");
         string requestStr;
         DateTime beginTime = DateTime.Now;
         while ((requestStr = sr.ReadLine()) != null)
